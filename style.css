@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+/* main header background css */
+.showcase {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(/assects/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.showcase::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+/* navbar css */
+.showcase-top {
+    position: relative;
+    z-index: 2;
+    padding: 26px 0px 0px 55px;
+}
+
+.showcase-top #logo {
+    height: 35px;
+}
+
+.showcase-top .submit {
+    background-color: #ef0914;
+    padding: 5px 16px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    right: 55px;
+    float: right;
+    font-weight: 400;
+}
+
+.showcase-top select {
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    float: right;
+    position: relative;
+    right: 85px;
+    padding: 5px 10px;
+}
+
+.showcase-top select option {
+    color: white;
+    background: black;
+}
+
+/* get started container */
+.showcase .get-stat-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    top: 180px;
+}
+
+.showcase .get-stat-container h1,
+p {
+    color: white
+}
+
+.get-stat-container h1 {
+    font-size: 3.9rem;
+}
+
+.get-stat-container .para-1 {
+    font-size: 1.7rem;
+}
+
+.get-stat-container .para-2 {
+    font-size: 1.2rem;
+}
+
+.get-stat-container input {
+    width: 35%;
+    padding: 22px;
+    margin-top: 1.5%;
+    border: none;
+    outline: none;
+}
+
+.get-stat-container button {
+    padding: 22px;
+    border: none;
+    background: #ef0914;
+    color: white;
+    margin-left: -0.3%;
+    font-weight: bold;
+}
+
+/* Main Section */
+.main-section .section-container {
+    border-top: 8px solid #222;
+    background: black;
+    display: flex;
+    padding: 0 80px;
+    padding-bottom: 90px;
+}
+
+.main-section .section-container .left-column {
+    padding-top: 13%;
+    padding-right: 2%;
+}
+
+.main-section .section-container .left-column h1 {
+    color: white;
+}
+
+.main-section .section-container .left-column h3 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-top: 5%;
+}
+
+.main-section .section-container .right-column {
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    height: 500px;
+}
+
+.main-section .section-container .right-column img {
+    position: absolute;
+    width: 100%;
+}
+
+.main-section .section-container .right-column .video-1 {
+    margin-left: 13%;
+    margin-top: 16%;
+    width: 73%;
+}
+
+/* Download your watch offline */
+.main-section .section2-container {
+    border-top: 8px solid #222;
+    background: black;
+    display: flex;
+    padding: 0 80px;
+    padding-bottom: 90px;
+}
+
+.main-section .section2-container .left-column img {
+    width: 100%;
+}
+
+.main-section .section2-container .right-column {
+    padding-top: 13%;
+    padding-right: 2%;
+    width: 50%;
+}
+
+.main-section .section2-container .right-column h1 {
+    color: white;
+}
+
+.main-section .section2-container .right-column h3 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-top: 5%;
+}
+
+.main-section .section2-container .left-column .box {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    background-color: black;
+    border-radius: 10px;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: -22%;
+}
+
+.main-section .section2-container .left-column .box .boxshot {
+    width: 15%;
+}
+
+.main-section .section2-container .left-column .box p {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.main-section .section2-container .left-column .box p a {
+    text-decoration: none;
+}
+
+.main-section .section2-container .left-column .box .download-gif {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    right: 0;
+}
+
+/* Watch Every Where */
+.main-section .section-container .right-column .video-2 {
+    margin-left: 19%;
+    margin-top: 8%;
+    width: 61%;
+}
+
+/* Create Profile for Kid */
+.main-section .section2-container .left-column img {
+    width: 100%;
+}
+
+/* Question section */
+.question-container {
+    background: black;
+    border-top: 8px solid #222;
+    padding-top: 60px;
+}
+
+.question-container h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+
+.question-container button {
+    border: none;
+    background-color: #303030;
+    cursor: pointer;
+    color: white;
+    width: 60%;
+    padding: 16px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    /* margin-bottom: 10px; */
+    position: relative;
+}
+
+.question-container button img {
+    width: 3%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    right: 20px;
+}
+
+.question-container .answer1,
+.answer2,
+.answer3,
+.answer4,
+.answer5,
+.answer6 {
+    background-color: #303030;
+    width: 60%;
+    padding: 15px;
+    font-size: 20px;
+    display: none;
+    align-items: center;
+    margin: 0px auto;
+    position: relative;
+    margin-top: 3px;
+    transition: 0.5s;
+}
+
+.email-container {
+    background: black;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+
+.email-container input {
+    width:35%;
+    padding:22px;
+    border:none;
+    outline:none;
+    margin-top: 0.5%;
+}
+
+.email-container button{
+    padding: 22px;
+    border: none;
+    background: #ef0914;
+    color: white;
+    margin-left: -0.3%;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    border-top: 8px solid #222;
+    padding-top: 5%;
+}
+
+footer h5{
+    color: white;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+footer .content{
+    max-width: 1350px;
+    margin: 0 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .content .box{
+    width: 20%;
+    transition: 0.5s all ease;
+}
+
+footer .content .middle{
+    padding-left: 80px;
+}
+
+footer .content .middle a{
+    line-height: 32px;
+    color:white;
+    text-decoration: none;
+}
+
+footer .content .middle a:hover{
+    text-decoration: underline;
+}
+
+footer .content p{
+    text-align: justify;
+}
+
+footer .content .middle select{
+    padding:8px;
+    background-color: transparent;
+    border:1px solid gray;
+    color: white;
+}
+
+footer .content .middle select option{
+    background: black;
+    color: white;
+}
+
+
+@media(max-width:1100px) {
+    footer .content .middle{
+        padding-left: 50px;
+    }
+}
+
+@media(max-width:943px) {
+    .showcase .get-stat-container {
+        position: relative;
+        top: 90px;
+    }
+
+    .showcase .get-stat-container h1 {
+        font-size: 3.4rem;
+    }
+
+    .showcase .get-stat-container para-1 {
+        font-size: 1.5rem;
+    }
+
+    .showcase .get-stat-container para-2 {
+        font-size: 1rem;
+    }
+
+    .showcase .get-stat-container input {
+        padding: 17px;
+        width: 55%;
+    }
+
+    .showcase .get-stat-container button {
+        /* display: block;   */
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 1.5%;
+        padding: 12px;
+    }
+
+    .main-section .section-container {
+        display: block;
+    }
+
+    .main-section .section-container .left-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-section .section-container .right-column {
+        width: 100%;
+    }
+
+    .main-section .section2-container {
+        display: block;
+    }
+
+    .main-section .section2-container .left-column {
+        width: 100%;
+    }
+
+    .main-section .section2-container .right-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .email-container input{
+        padding:17px;
+        width: 55%;
+    }
+
+    .email-container button{
+        /* display: block;  */
+        display: flex;   
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 1.5%;
+        padding: 12px;
+    }
+
+    footer .content .box{
+        width: 50%;
+    }
+
+}
+
+
+@media(max-width:774px) {
+    .main-section .section-container {
+        padding-bottom: 0;
+    }
+
+
+}
+
+@media(max-width:500px) {
+    .main-section .section-container .right-column {
+        height: 270px;
+    }
+
+    .main-section .section2-container .left-column .box {
+        width: 100%;
+    }
+
+    footer{
+        position: relative;
+    }
+
+    footer .content .box{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    footer .content .middle{
+        padding-left: 0;
+    }
+
+    
+}
+
+@media(max-width: 659px) {
+    .showcase-top {
+        padding: 26px 0px 0px 25px;
+    }
+
+    .showcase-top #logo {
+        height: 25px;
+    }
+
+    .showcase-top .submit {
+        right: 25px;
+        position: relative;
+        padding: 2px 10px;
+    }
+
+    .showcase-top select {
+        position: relative;
+        right: 40px;
+        padding: 2px 10px;
+    }
+
+    .showcase .get-stat-container {
+        position: relative;
+        top: 60px;
+    }
+
+    .showcase .get-stat-container h1 {
+        font-size: 2rem;
+        padding: 50px;
+        padding-bottom: 0px;
+    }
+
+    .showcase .get-stat-container .para-1 {
+        font-size: 1.5rem;
+    }
+
+    .showcase .get-stat-container .para-2 {
+        font-size: 1rem;
+    }
+
+    .showcase .get-stat-container input {
+        padding: 14px;
+        width: 70%;
+    }
+
+    .question-container button {
+        width: 100%;
+    }
+
+    .question-container .answer1,
+    .answer2,
+    .answer3,
+    .answer4,
+    .answer5,
+    .answer6 {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:346px) {
+    .showcase-top #logo {
+        height: 22px;
+    }
+
+    .showcase-top .submit {
+        padding: 1px 5px;
+    }
+
+    .showcase-top select {
+        position: relative;
+        right: 30px;
+        padding: 1px 0px;
+    }
+
+    .showcase .get-stat-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .showcase .get-stat-container .para-1 {
+        font-size: 1.1rem;
+    }
+
+    .showcase .get-stat-container .para-2 {
+        font-size: 0.8rem;
+    }
+
+    .showcase .get-stat-container input {
+        padding: 14px;
+        width: 70%;
+    }
+}
